@@ -1,155 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bc5e89ddcb.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-<!-- HOME/HEADER -->
- <div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/Logo.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Alex Zhou</p>
-            <h1>Project and Design Portfolio</h1>
-        </div>
-    </div>
- </div>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- ABOUT -->
- <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/Grad Photo1.JPG">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>My name is Alex Zhou and I am a Master's student studying 
-                    Aerospace Engineering at Purdue University. I will be documenting my engineering 
-                    and personal projects on this website. <br></br>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-                    I am motivated by a profound curiosity to understand the inner workings of various 
-                    processes, coupled with a passion for crafting solutions that demand attention 
-                    to detail, a creative outlook, and dedicated effort throughout.  
-                </p>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Software</span><br>Solidworks, Siemens NX, ANSYS, Abaqus, ParaView, Microsoft Office</li>
-                        <li><span>Programming Languages</span><br>MATLAB, Simulink, Java, Python</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>August 2023 - December 2023</span><br>Purdue Energetics Research Center - Gonzalez Research Group</li>
-                        <li><span>May 2023 - August 2023</span><br>PERC Summer Undergraduate Program (AAMP-UP 23)</li>
-                        <li><span>June 2022 - May 2023</span><br>Composites Manufacturing And Performance Center - Zhang Research Group</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024 - Current</span><br>Master of Science in Aeronautics and Astronautics 
-                            from Purdue University</li>
-                        <li><span>2020 - 2023</span><br>Bachelor of Science in Aeronautical and Astronautical Engineering 
-                            from Purdue University</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-<!-- PORTFOLIO -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/Spheroid Project Image 1.png">
-                <div class="layer">
-                    <h3>Flow Over A Prolate Spheroid</h3>
-                    <p>As the final project for AAE 412 - Introduction to Fluid Dynamics, I worked 
-                        in a small team to analyze the flow over a prolate spheroid with a 6:1 aspect 
-                        ratio at an angle of attack.</p>
-                    <a href="prolate-spheroid.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Project Nautilus Image 1.png">
-                <div class="layer">
-                    <h3>Project Nautilus</h3>
-                    <p>My senior design project for my undergraduate degree was to leverage Global Navigation
-                        Satellite System Reflectometry (GNSS-R) technology to provide accurate and cost-effective 
-                        measurements of global sea-surface wind speed and direction. 
+      <title>Responsive portfolio website Rian - Bedimcode</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class = "nav__logo"></a>
+               <span class="nav_logo-circle">AZ</span>
+               <span class="nav__logo-name">Alex Zhou</span>
 
-                    </p>
-                    <a href="project-nautilus.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Spheroid Project Image 1.png">
-                <div class="layer">
-                    <h3>Spheroid Project</h3>
-                    <p>Description</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
+               <div class="nav__menu" id="nav-menu">
+                  <span class="nav__title">Menu</span>
 
-<!-- CONTACT -->
-<div id="contact">
-    <div class="central">
-        <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i>zhou1120@purdue.edu</p>
-            <div class="social-icons">
-                <a href="linkedin.com/in/alex-z-9a637b1b6"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/AlexZhou1120"><i class="fa-brands fa-square-github"></i></a>
-            </div>
-                <a href="files/Alex Zhou Resume.pdf" download class="btn btn2">Download CV</a>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>© Alex Zhou</p>
-    </div>
-</div>
+                  <h3 class="nav__name">Alex</h3>
+                  
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                     </li>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+                     <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                     </li>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+                     <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                     </li>
 
-</body>
+                     <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Me</a>
+                     </li>
+                  </ul>
+
+                  <!-- Close button -->
+                  <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+                  </div>
+               </div>
+
+               <div class="nav__buttons">
+                  <!-- Toggle button -->
+                  <div class="nav__toggle" id="nav-toggle">
+
+                  </div>
+               </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
