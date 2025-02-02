@@ -30,7 +30,13 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SHADOW HEADER ===============*/
-
+const shadowHeader = () =>{
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height
+    this.scrollY >= 50 ? header.classList.add('scroll-header')
+                       : header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', shadowHeader)
 
 /*=============== EMAIL JS ===============*/
 
