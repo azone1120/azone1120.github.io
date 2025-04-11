@@ -283,9 +283,90 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
+/* ABOUT PICTURE */
+.about-banner {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-banner img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.about-container {
+    padding: 2rem;
+    margin: 2rem 10%;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Two-column layout on larger screens */
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+    }
+    .about-summary,
+    .about-education {
+      flex: 1;
+      padding: 1rem;
+    }
+  }
+  
+  .about-summary h1 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-summary p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Education block styling */
+  .about-education {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .about-education h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Education item styling */
+  .education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .edu-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  .edu-info {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .edu-title {
+    margin: 0;
+  }
+  
+  .edu-duration,
+  .edu-school {
+    margin: 0.25rem 0;
+  }
 
 .arrow {
   position: absolute;
