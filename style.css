@@ -260,7 +260,7 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/*=============== ABOUT SECTION ===============*/
 
 #about {
   position: relative;
@@ -394,7 +394,7 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/*=============== EXPERIENCE SECTION ===============*/
 
 #experience {
   position: relative;
@@ -433,7 +433,7 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/*=============== PROJECTS SECTION ===============*/
 
 #projects {
   position: relative;
@@ -460,7 +460,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/*=============== CONTACT ===============*/
 
 #contact {
   display: flex;
@@ -500,7 +500,7 @@ article .icon {
   height: 2.5rem;
 }
 
-/* FOOTER SECTION */
+/*=============== FOOTER SECTION ===============*/
 
 footer {
   height: 26vh;
