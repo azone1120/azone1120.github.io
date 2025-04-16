@@ -390,12 +390,6 @@ section {
   margin: auto 0;
 }
 
-/* SMALL HOVER ANIMATION */
-.edu-logo:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 
 /*=============== EXPERIENCE SECTION ===============*/
 #experience {
