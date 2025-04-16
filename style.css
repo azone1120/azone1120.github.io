@@ -403,7 +403,6 @@ section {
   max-width: 800px;
 }
 
-/* vertical line */
 .timeline::before {
   content: "";
   position: absolute;
@@ -414,19 +413,17 @@ section {
   background: #ccc;
 }
 
-/* timeline item */
 .timeline-item {
   position: relative;
   margin: 2rem 0;
   padding-left: 3.5rem;
 }
 
-/* styled dot */
 .timeline-dot {
-  width: 0.65rem;  /* smaller size */
+  width: 0.65rem;
   height: 0.65rem;
-  background-color: #d4af37; /* gold fill */
-  border: 2px solid #000; /* bold border */
+  background-color: #d4af37;
+  border: 2px solid #000;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -435,7 +432,6 @@ section {
   z-index: 2;
 }
 
-/* content box */
 .timeline-content {
   background: #fff;
   padding: 1rem 1.5rem;
@@ -450,6 +446,35 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.exp-date {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.exp-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.exp-company {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.exp-summary {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Old experience styles preserved for fallback */
 .timeline-content h3 {
   margin: 0;
   font-size: 1.2rem;
